@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="../assets/css/auth-styles.css">
+    <script src="../assets/js/login-validation.js" defer></script>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">Connectify</div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+        </div>
+    </nav>
+
+    <!-- Login Container -->
+    <div class="auth-container">
+        <div class="auth-box">
+            <h2>Login</h2>
+            <p>Welcome back! Please login to your account.</p>
+            <form id="login-form" action="#" method="POST">
+                <label for="email">Email or Username</label>
+                <input type="text" id="email" name="email" placeholder="Enter your email or username" required>
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                <button type="submit">Login</button>
+            </form>
+
+            <!-- OAuth Buttons -->
+            <div class="oauth-buttons">
+                <a href="https://accounts.google.com" target="_blank">
+                    <button class="btn-google">
+                        <img src="../assets/images/google.jpg" alt="Google" class="oauth-icon"> Login with Google
+                    </button>
+                </a>
+                <a href="https://www.facebook.com" target="_blank">
+                    <button class="btn-facebook">
+                        <img src="../assets/images/facebook.jpg" alt="Facebook" class="oauth-icon"> Login with Facebook
+                    </button>
+                </a>
+            </div>
+
+            <div class="extra-links">
+                <p>Don't have an account? <a href="signup.html"> Sign up</a></p>
+                <a href="forgot-password.html">Forgot your password?</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <p>&copy; 2024 Connectify. All rights reserved.</p>
+    </footer>
+</body>
+</html>
