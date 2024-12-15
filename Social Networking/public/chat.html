@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat and Groups</title>
+    <link rel="stylesheet" href="../assets/css/chat.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="logo">Connectify</div>
+        <div class="nav-links">
+            <a href="#chat-section" onclick="showChat()">Chats</a>
+            <a href="#groups-section" onclick="showGroups()">Groups</a>
+        </div>
+    </div>
+
+    <!-- Chat Section -->
+    <div class="chat-section" id="chat-section">
+        <h2>Chats</h2>
+        <div class="chat-list">
+            <div class="chat-item" onclick="openChat('user1')">
+                <div class="user-avatar">U1</div>
+                <div class="chat-preview">
+                    <strong>User 1</strong>
+                    <p>Hey! What's up?</p>
+                </div>
+            </div>
+            <div class="chat-item" onclick="openChat('user2')">
+                <div class="user-avatar">U2</div>
+                <div class="chat-preview">
+                    <strong>User 2</strong>
+                    <p>Let's meet tomorrow.</p>
+                </div>
+            </div>
+        </div>
+        <div class="chat-window" id="chat-window">
+            <div class="chat-header">Chat with <span id="chat-user">User</span></div>
+            <div class="chat-messages" id="chat-messages"></div>
+            <div class="chat-input">
+                <input type="text" id="message-input" placeholder="Type your message">
+                <button onclick="sendMessage()">Send</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Groups Section -->
+    <div class="groups-section" id="groups-section" style="display: none;">
+        <h2>Groups</h2>
+        <div class="groups-list">
+            <div class="group-item" onclick="openGroup('group1')">
+                <div class="group-avatar">G1</div>
+                <div class="group-details">
+                    <strong>Group 1</strong>
+                    <p>Welcome to Group 1!</p>
+                </div>
+            </div>
+            <div class="group-item" onclick="openGroup('group2')">
+                <div class="group-avatar">G2</div>
+                <div class="group-details">
+                    <strong>Group 2</strong>
+                    <p>Upcoming event: 20th Dec.</p>
+                </div>
+            </div>
+        </div>
+        <div class="group-window" id="group-window">
+            <div class="group-header">Group: <span id="group-name">Group Name</span></div>
+            <div class="group-content" id="group-content"></div>
+            <div class="group-input">
+                <textarea id="group-message-input" placeholder="Write a message or post"></textarea>
+                <button onclick="postToGroup()">Post</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="main-footer">
+        <div class="container">
+            <p>© 2024 Connectify. All rights reserved.</p>
+        </div>
+    </footer>
+
+
+    <script src="../assets/js/chat.js"></script>
+</body>
+</html>

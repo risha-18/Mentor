@@ -1,0 +1,255 @@
+/* General Reset */
+body, h1, h2, h3, p, ul, li, a, button, input, textarea {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    line-height: 1.6;
+    margin-top: 70px; /* Adjust for fixed navbar */
+}
+
+/* Navbar */
+.navbar {
+    background-color: #2c3e50;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: white;
+}
+
+.navbar .nav-links {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    list-style: none; /* Removes bullets */
+    padding: 0; /* Ensure consistent spacing */
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.navbar a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Profile Header */
+.profile-header {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    padding: 2rem 1rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* Rounded image */
+    border: 5px solid #ddd;
+    object-fit: cover;
+    margin-right: 2rem;
+}
+
+.profile-details {
+    flex: 1;
+}
+
+.profile-details h1 {
+    margin: 0;
+    font-size: 2rem;
+    color: #333;
+}
+
+.profile-details p {
+    font-size: 1rem;
+    color: #777;
+    margin-top: 10px;
+}
+
+/* Profile Info */
+.profile-info {
+    margin: 2rem auto;
+    max-width: 800px;
+    background-color: white;
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    display: block; /* Default visible */
+}
+
+.profile-info h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #2c3e50;
+}
+
+.profile-info .info-item {
+    margin-bottom: 0.8rem;
+}
+
+.profile-info button {
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    background-color: #2c3e50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.profile-info button:hover {
+    background-color: #3e6279;
+}
+
+/* Edit Profile Section */
+.edit-profile-section {
+    margin: 2rem auto;
+    max-width: 800px;
+    background-color: white;
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    display: none; /* Hidden by default */
+}
+
+.edit-profile-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #2c3e50;
+}
+
+.edit-profile-section form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.edit-profile-section input,
+.edit-profile-section textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.edit-profile-section input:focus,
+.edit-profile-section textarea:focus {
+    border-color: #3498db;
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+}
+
+.edit-profile-section button {
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    background-color: #2c3e50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.edit-profile-section button:hover {
+    background-color: #2980b9;
+}
+
+/* Settings Section */
+.settings {
+    display: none; /* Hidden by default */
+    margin: 2rem auto;
+    max-width: 800px;
+    background-color: white;
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.settings h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #2c3e50;
+}
+
+.settings form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.settings input[type="text"],
+.settings input[type="email"],
+.settings input[type="password"],
+.settings select {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.settings input:focus,
+.settings select:focus {
+    border-color: #3498db;
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+}
+
+.settings label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.settings button {
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    background-color: #2c3e50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.settings button:hover {
+    background-color: #3e6279;
+}
+
+/* Footer */
+.main-footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
