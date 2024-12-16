@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Groups & Communities - Connectify</title>
+    <link rel="stylesheet" href="./assets/css/groups.css"> <!-- Link the CSS -->
+    <script src="./assets/js/groups.js" defer></script> <!-- Link the JS -->
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">Connectify</div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="friends.html">Friends</a>
+        </div>
+    </nav>
+
+    <!-- Main Container -->
+    <div class="container">
+        <div class="hero-section">
+            <h2>Groups & Communities</h2>
+            <p>Create, join, and engage with your favorite groups.</p>
+        </div>
+
+        <!-- Group Actions -->
+        <div class="group-actions">
+            <button class="tab" onclick="showTab('my-groups')">My Groups</button>
+            <button class="tab" onclick="showTab('discover-groups')">Discover Groups</button>
+        </div>
+
+        <!-- My Groups Section -->
+        <div id="my-groups" class="list">
+            <h2>My Groups</h2>
+            <ul id="my-groups-list"></ul>
+        </div>
+
+        <!-- Discover Groups Section -->
+        <div id="discover-groups" class="list hidden">
+            <h2>Discover Groups</h2>
+            <ul id="discover-groups-list"></ul>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <p>&copy; 2024 Connectify. All rights reserved.</p>
+    </footer>
+</body>
+</html>

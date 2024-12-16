@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connectify Feed</title>
+    <link rel="stylesheet" href="./assets/css/feed.css">
+    <!-- Font Awesome for Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="logo">Connectify</div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="#" class="logout-btn">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Action Icons Section -->
+    <section class="action-icons">
+        <div class="icon-container" onclick="openChatSection()">
+            <i class="fas fa-comments icon"></i>
+            <span>Chat</span>
+        </div>
+        <div class="icon-container" onclick="openNotifications()">
+            <i class="fas fa-bell icon"></i>
+            <span>Notifications</span>
+        </div>
+        <div class="icon-container" onclick="openGroups()">
+            <i class="fas fa-users icon"></i>
+            <span>Groups</span>
+        </div>
+    </section>
+
+    <!-- Stories Section -->
+    <section class="stories">
+        <h2>Stories</h2>
+        <div class="story-items">
+            <div class="story">Story 1</div>
+            <div class="story">Story 2</div>
+            <div class="story">Story 3</div>
+            <div class="story">Story 4</div>
+        </div>
+    </section>
+
+    <!-- Feed Section -->
+    <section class="feed">
+        <h2>Your Feed</h2>
+        <article class="post">
+            <p>This is a sample post.</p>
+            <div class="actions">
+                <button class="like-btn">Like</button>
+                <button class="comment-btn">Comment</button>
+                <button class="share-btn">Share</button>
+            </div>
+        </article>
+    </section>
+
+    <!-- Trending Topics Section -->
+    <aside class="trending">
+        <h3>Trending Topics</h3>
+        <div class="trending-grid">
+            <div class="trending-item">
+                <a href="#coding">#Coding</a>
+            </div>
+            <div class="trending-item">
+                <a href="#webdevelopment">#WebDevelopment</a>
+            </div>
+            <div class="trending-item">
+                <a href="#connectifylaunch">#ConnectifyLaunch</a>
+            </div>
+        </div>
+    </aside>
+
+    <!-- Footer Section -->
+    <footer class="main-footer">
+        <div class="container">
+            <p>© 2024 Connectify. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="./assets/js/feed.js"></script>
+</body>
+</html>
